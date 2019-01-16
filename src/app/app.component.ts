@@ -67,7 +67,7 @@ export class AppComponent implements OnInit {
         }
       }
       if (this.pickUpLocation !== this.putDownLocation) {
-        document.getElementById('logs').appendChild(newLog);
+        document.getElementById('loglist').prepend(newLog);
       }
       targetElement.innerText = this.atHand;
       this.atHand = '';
