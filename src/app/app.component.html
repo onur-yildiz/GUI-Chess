@@ -1,0 +1,155 @@
+<div id="game-container">
+
+  <div id="logs">
+    <h2>Move Logs</h2>
+  </div>
+
+  <div id="board">
+    <table id="chess-board">
+      <tbody>
+        <tr>
+          <td class="corner"></td>
+          <th class="horizontal-location">a</th>
+          <th class="horizontal-location">b</th>
+          <th class="horizontal-location">c</th>
+          <th class="horizontal-location">d</th>
+          <th class="horizontal-location">e</th>
+          <th class="horizontal-location">f</th>
+          <th class="horizontal-location">g</th>
+          <th class="horizontal-location">h</th>
+          <td class="corner"></td>
+        </tr>
+        <tr>
+          <th class="vertical-location">8</th>
+          <td (click)="onClick($event)" class="white" id="8a"><span>♜</span></td>
+          <td (click)="onClick($event)" class="black" id="8b"><span>♞</span></td>
+          <td (click)="onClick($event)" class="white" id="8c"><span>♝</span></td>
+          <td (click)="onClick($event)" class="black" id="8d"><span>♛</span></td>
+          <td (click)="onClick($event)" class="white" id="8e"><span>♚</span></td>
+          <td (click)="onClick($event)" class="black" id="8f"><span>♝</span></td>
+          <td (click)="onClick($event)" class="white" id="8g"><span>♞</span></td>
+          <td (click)="onClick($event)" class="black" id="8h"><span>♜</span></td>
+          <th class="vertical-location">8</th>
+        </tr>
+        <tr>
+          <th class="vertical-location">7</th>
+          <td (click)="onClick($event)" class="black" id="7a"><span>♟</span></td>
+          <td (click)="onClick($event)" class="white" id="7b"><span>♟</span></td>
+          <td (click)="onClick($event)" class="black" id="7c"><span>♟</span></td>
+          <td (click)="onClick($event)" class="white" id="7d"><span>♟</span></td>
+          <td (click)="onClick($event)" class="black" id="7e"><span>♟</span></td>
+          <td (click)="onClick($event)" class="white" id="7f"><span>♟</span></td>
+          <td (click)="onClick($event)" class="black" id="7g"><span>♟</span></td>
+          <td (click)="onClick($event)" class="white" id="7h"><span>♟</span></td>
+          <th class="vertical-location">7</th>
+        </tr>
+        <tr>
+          <th class="vertical-location">6</th>
+          <td (click)="onClick($event)" class="white" id="6a"></td>
+          <td (click)="onClick($event)" class="black" id="6b"></td>
+          <td (click)="onClick($event)" class="white" id="6c"></td>
+          <td (click)="onClick($event)" class="black" id="6d"></td>
+          <td (click)="onClick($event)" class="white" id="6e"></td>
+          <td (click)="onClick($event)" class="black" id="6f"></td>
+          <td (click)="onClick($event)" class="white" id="6g"></td>
+          <td (click)="onClick($event)" class="black" id="6h"></td>
+          <th class="vertical-location">6</th>
+        </tr>
+
+        <tr>
+          <th class="vertical-location">5</th>
+          <td (click)="onClick($event)" class="black" id="5a"></td>
+          <td (click)="onClick($event)" class="white" id="5b"></td>
+          <td (click)="onClick($event)" class="black" id="5c"></td>
+          <td (click)="onClick($event)" class="white" id="5d"></td>
+          <td (click)="onClick($event)" class="black" id="5e"></td>
+          <td (click)="onClick($event)" class="white" id="5f"></td>
+          <td (click)="onClick($event)" class="black" id="5g"></td>
+          <td (click)="onClick($event)" class="white" id="5h"></td>
+          <th class="vertical-location">5</th>
+        </tr>
+        <tr>
+          <th class="vertical-location">4</th>
+          <td (click)="onClick($event)" class="white" id="4a"></td>
+          <td (click)="onClick($event)" class="black" id="4b"></td>
+          <td (click)="onClick($event)" class="white" id="4c"></td>
+          <td (click)="onClick($event)" class="black" id="4d"></td>
+          <td (click)="onClick($event)" class="white" id="4e"></td>
+          <td (click)="onClick($event)" class="black" id="4f"></td>
+          <td (click)="onClick($event)" class="white" id="4g"></td>
+          <td (click)="onClick($event)" class="black" id="4h"></td>
+          <th class="vertical-location">4</th>
+        </tr>
+        <tr>
+          <th class="vertical-location">3</th>
+          <td (click)="onClick($event)" class="black" id="3a"></td>
+          <td (click)="onClick($event)" class="white" id="3b"></td>
+          <td (click)="onClick($event)" class="black" id="3c"></td>
+          <td (click)="onClick($event)" class="white" id="3d"></td>
+          <td (click)="onClick($event)" class="black" id="3e"></td>
+          <td (click)="onClick($event)" class="white" id="3f"></td>
+          <td (click)="onClick($event)" class="black" id="3g"></td>
+          <td (click)="onClick($event)" class="white" id="3h"></td>
+          <th class="vertical-location">3</th>
+        </tr>
+        <tr>
+          <th class="vertical-location">2</th>
+          <td (click)="onClick($event)" class="white" id="2a"><span>♙</span></td>
+          <td (click)="onClick($event)" class="black" id="2b"><span>♙</span></td>
+          <td (click)="onClick($event)" class="white" id="2c"><span>♙</span></td>
+          <td (click)="onClick($event)" class="black" id="2d"><span>♙</span></td>
+          <td (click)="onClick($event)" class="white" id="2e"><span>♙</span></td>
+          <td (click)="onClick($event)" class="black" id="2f"><span>♙</span></td>
+          <td (click)="onClick($event)" class="white" id="2g"><span>♙</span></td>
+          <td (click)="onClick($event)" class="black" id="2h"><span>♙</span></td>
+          <th class="vertical-location">2</th>
+        </tr>
+        <tr>
+          <th class="vertical-location">1</th>
+          <td (click)="onClick($event)" class="black" id="1a"><span>♖</span></td>
+          <td (click)="onClick($event)" class="white" id="1b"><span>♘</span></td>
+          <td (click)="onClick($event)" class="black" id="1c"><span>♗</span></td>
+          <td (click)="onClick($event)" class="white" id="1d"><span>♕</span></td>
+          <td (click)="onClick($event)" class="black" id="1e"><span>♔</span></td>
+          <td (click)="onClick($event)" class="white" id="1f"><span>♗</span></td>
+          <td (click)="onClick($event)" class="black" id="1g"><span>♘</span></td>
+          <td (click)="onClick($event)" class="white" id="1h"><span>♖</span></td>
+          <th class="vertical-location">1</th>
+        </tr>
+        <tr>
+          <td class="corner"></td>
+          <th class="horizontal-location">a</th>
+          <th class="horizontal-location">b</th>
+          <th class="horizontal-location">c</th>
+          <th class="horizontal-location">d</th>
+          <th class="horizontal-location">e</th>
+          <th class="horizontal-location">f</th>
+          <th class="horizontal-location">g</th>
+          <th class="horizontal-location">h</th>
+          <td class="corner"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div id="bottom">
+    <div id="turn-button">
+      <div>Current: {{ currentPlayer }}</div>
+      <button (click)="onSwitchPlayers()">End Turn</button>
+    </div>
+    <div id="timer-setting">
+      <input #timeInput type="text" placeholder="Seconds">
+      <button (click)="onSetTimer()">Set</button>
+    </div>
+  
+    <div id="timer">
+      <button (click)="onStartTimer();">{{ playButton }}</button>
+      <div>{{ time }} s.</div>
+    </div>
+  </div>
+
+  <div id="deadpool">
+    <h2>Deadpool</h2>
+  </div>
+
+</div>

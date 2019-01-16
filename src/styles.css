@@ -1,0 +1,144 @@
+/* You can add global styles to this file, and also import other style files */
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  user-select: none;
+}
+
+body {
+  overflow: hidden;
+}
+
+td span {
+  pointer-events: none;
+}
+
+.black {
+  background-color: lightgrey;
+}
+
+.white {
+  background-color: white;
+}
+
+.horizontal-location, .vertical-location, .corner {
+  background-color: whitesmoke;
+}
+
+.white, .black, .vertical-location, .horizontal-location, .corner {
+  text-align: center;
+  font-size: 1.7em;
+  font-weight: bolder;
+  
+  height: 9vh;
+  width: 10%;
+}
+
+h2 {
+  padding-bottom: .5em;
+  border-bottom: 1px solid black;
+  margin-bottom: 2em;
+  box-shadow: 0 5px 5px 0 lightgray;
+}
+
+button:focus {
+  outline: 0;
+}
+
+button, input, #timer div, #turn-button div {
+  padding: .7em 1em;
+  font-size: 1.5em;
+  font-weight: bolder;
+}
+
+input {
+  width: 5em
+}
+
+#game-container {
+  display: flex;
+  flex-flow: row;
+  align-content: space-between;
+}
+
+#logs {
+  text-align: center;
+  margin-top: 5em;
+  width: 20%;
+  height: 80vh;
+  overflow-y: auto;
+  font-weight: bold;
+}
+
+#board {
+  width: 60%;
+  height: 92vh;
+  border: 2px darkgray groove;
+  margin: .5em auto;
+  background-color: lightgrey;
+}
+
+#chess-board {
+  width: 100%;
+}
+
+#turn-button {
+  display: flex;
+  flex-flow: row;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+#timer {
+  display: flex;
+  flex-flow: row;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%,0);
+}
+
+#timer div {
+  text-align: center;
+  width: 3.5em;
+  border: 1px gray solid;
+  background-color: whitesmoke;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#timer-setting {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+#bottom {
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4em;
+  background-color: lightgrey;
+  border-top: 2px groove lightgrey;
+}
+
+#deadpool {
+  text-align: center;
+  margin-top: 5em;
+  width: 20%;
+  height: 80vh;
+  overflow-wrap: break-word;
+  white-space: wrap;
+  font-weight: bold;
+}
+
+#deadpool span {
+  cursor: default;
+  font-size: 4.2em;
+}
